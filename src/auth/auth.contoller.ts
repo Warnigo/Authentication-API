@@ -7,11 +7,11 @@ export class AuthController {
 
   @Post('login')
   login() {
-    return 'I am login';
+    return this.authSurvice.login();
   }
 
   @Post('register')
   register() {
-    return 'I am register';
+    return this.authSurvice.register();
   }
 }
